@@ -1,0 +1,236 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Travel and Accomodations</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+<style type="text/css"> 
+<!-- 
+body  {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background: #666666;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+.twoColFixRtHdr #container { 
+	width: 780px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 1px solid #000000;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+} 
+.twoColFixRtHdr #header {
+	padding: 0 10px 0 20px;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+	background-color: #FFFFFF;
+	word-spacing: normal;
+} 
+.twoColFixRtHdr #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+}
+.twoColFixRtHdr #sidebar1 {
+	float: right; /* since this element is floated, a width must be given */
+	width: 200px; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 15px 10px;
+	background-color: #FFFFFF;
+}
+.twoColFixRtHdr #mainContent {
+	margin: 0 250px 0 0; /* the right margin on this div element creates the column down the right side of the page - no matter how much content the sidebar1 div contains, the column space will remain. You can remove this margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends. */
+	padding: 0 20px; /* remember that padding is the space inside the div box and margin is the space outside the div box */
+	font-size: 14px;
+} 
+.twoColFixRtHdr #footer {
+	padding: 0 10px 0 20px;
+	background-color: #FFFFFF;
+} 
+.smalltext {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+}
+.headingfont {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 24px;
+	font-variant: normal;
+	text-align: center;
+}
+.twoColFixRtHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 10px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+--> 
+</style>
+<!--[if IE 5]>
+<style type="text/css"> 
+/* place css box model fixes for IE 5* in this conditional comment */
+.twoColFixRtHdr #sidebar1 { width: 220px; }
+</style>
+<![endif]-->
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColFixRtHdr #sidebar1 { padding-top: 30px; }
+.twoColFixRtHdr #mainContent { zoom: 1; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]-->
+
+<style type="text/css">
+<!--
+#MapBox {
+	position:absolute;
+	left:391px;
+	top:420px;
+	width:700;
+	height:500;
+	z-index:1;
+	background-color: #FFFFFF;
+}
+.style1 {
+	color: #FF6600;
+	font-size: x-large;
+}
+.style3 {
+	color: #000000
+}
+.style4 {color: #3300FF; font-weight: bold; font-size: 18px; }
+.style5 {color: #FF6600}
+.style6 {font-size: 18
+}
+.style7 {
+	color: #000000;
+	font-size: 14px;
+}
+#weather {
+	position:absolute;
+	left:882px;
+	top:445px;
+	width:160;
+	height:90;
+	z-index:2;
+}
+-->
+</style>
+
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="twoColFixRtHdr">
+
+<div id="MapBox">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d3989.4589370357207!2d-98.62204724769552!3d29.585156819002012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e2!4m5!1s0x865c427d2eba5805%3A0x6630a5d8598eed8!2sWyndham+Garden+San+Antonio+near+La+Cantera%2C+6809+North+Loop+1604+West%2C+San+Antonio%2C+TX+78249!3m2!1d29.5898105!2d-98.62243819999999!4m3!3m2!1d29.5826729!2d-98.6203884!5e0!3m2!1sen!2sus!4v1439342797569" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+<div id="weather"><span style="display: block !important; width: 180px; text-align: center; font-family: sans-serif; font-size: 12px;"><a href="http://www.wunderground.com/cgi-bin/findweather/getForecast?query=zmw:78249.1.99999&bannertypeclick=wu_blueglass" title="San Antonio, Texas Weather Forecast" target="_blank"><img src="http://weathersticker.wunderground.com/weathersticker/cgi-bin/banner/ban/wxBanner?bannertype=wu_blueglass&airportcode=KSAT&ForcedCity=San Antonio&ForcedState=TX&zip=78249&language=EN" alt="Find more about Weather in San Antonio, TX" width="160" /></a><br>
+<a href="http://www.wunderground.com/cgi-bin/findweather/getForecast?query=zmw:78249.1.99999&bannertypeclick=wu_blueglass" title="Get latest Weather Forecast updates" style="font-family: sans-serif; font-size: 12px" target="_blank">Click for weather forecast</a></span></div>
+<div id="container">
+  <div id="header">
+    <h1 align="center" class="headingfont"><a href="http://www.utsa.edu/" target="_blank"><img src="Webpage Files/Images/UTSAVectorOrange.jpg" alt="utsa logo orange" width="152" height="54" class="fltlft" /></a><a href="http://www.swri.org/" target="_blank"><img src="Webpage Files/Images/Southwest_Research_Institute_Logo.jpg" alt="SwRI Logo" width="152" height="54" class="fltrt" /></a>APS CUWiP 2016 </h1>
+    <h1 align="center" class="headingfont">at UTSA and SwRI</h1>
+    <ul id="MenuBar1" class="MenuBarHorizontal">
+      <li>
+        <div align="left"><a href="/CUWiP homepage.html" class="smalltext">Home</a> </div>
+      </li>
+      <li><span class="smalltext"><a href="/CUWiP homepage.html" class="smalltext">Conference </a> </span>
+          <ul>
+            <li class="smalltext"><a href="/CUWiP about.html">About CUWiP</a></li>
+            <li><a href="/CUWiP local organizing committee.html" class="smalltext">Local Organizing Committee</a></li>
+            <li class="smalltext"><a href="/CUWiP workshops.html">Workshops and Panels</a></li>
+            <li><a href="/CUWiP speakers.html" class="smalltext">Speakers and Panelists</a></li>
+          </ul>
+      </li>
+      <li><a href="/CUWiP program.html" class="smalltext">Program</a> </li>
+      <li><a class="smalltext" href="/CUWiP apply.html">Apply</a> </li>
+      <li><a href="/CUWiP travel and accomodations.html" class="smalltext MenuBarItemSubmenu">Travel &amp; Accomodations</a>
+          <ul>
+            <li><a href="/CUWiP travel.html" class="smalltext">Travel </a></li>
+            <li><a href="/CUWiP accomodations.html" class="smalltext">Accomodations</a></li>
+            <li><a href="/CUWiP reimbursements.html" class="smalltext">Reimbursements</a></li>
+          </ul>
+      </li>
+      <li><a href="/CUWiP faq.html" class="smalltext">FAQ</a></li>
+      <li><a href="/CUWiP sponsors.html" class="smalltext">Sponsors</a></li>
+      <li><a href="/CUWiP contact us.html" class="smalltext">Contact Us</a></li>
+    </ul>
+    <p align="center" class="headingfont">&nbsp;</p>
+  <!-- end #header --></div>
+  <div id="sidebar1">
+    <h3 align="center">Follow us on</h3>
+    <p><img src="/Webpage Files/Images/Social Media Logos.jpg" alt="Social" width="170" height="69" /></p>
+    <p align="center">
+      <!-- end #sidebar1 -->
+      <span class="style5"><strong>@UTSACUWIP</strong></span></p>
+    <p align="center">&nbsp;</p>
+    <p align="center">&nbsp;</p>
+    <p align="center">&nbsp;</p>
+    <p align="center">&nbsp;</p>
+    <p align="center">&nbsp;</p>
+    <p>
+      <!-- end #sidebar1 -->
+    </p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+  </div>
+  <div id="mainContent">
+    <h1 align="left" class="style1">Travel and Accomodations</h1>
+    <p align="justify">Lodging and meals will be provided throughout the conference weekend for the cost of the $25 registration fee. Students must ask their departments if travel funding is available, however no student will be turned away for lack of funds. Travel grants are available for those whose departments cannot cover full travel costs to the conference. <br />
+    </p>
+    <p>The conference hotel is the Wyndham Garden Hotel and it is located within walking distance of UTSA.  However, transportation will be provided during the hours specified in the program and indicated below. </p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>Printable map of the UTSA campus can be found <a href="/Webpage Files/Images/UTSA MainCampusMap.pdf">here</a>.</p>
+    <p class="style4">Friday</p>
+    <p align="justify">A shuttle will run in a loop between the hotel and the Biotechnology Sciences &amp; Engineering Building (BSE) between 3pm and 6pm. A bus will transport people back to the hotel at 11pm.</p>
+    <p class="style4">Saturday </p>
+    <p align="justify">Buses will transport participants from the<br />
+      Hotel to HEB University Center South at 7 and 7:30 am. <br />
+      HEB University Center South to hotel at 6:00 and 6:30 pm<br />
+      Hotel to HEB University Center South at 7:00 and 7:30 pm<br />
+    HEB University Center South to hotel at 10:30 and 11:00 pm</p>
+    <p class="style4">Sunday</p>
+    <p align="justify"> Buses will transport participants from the hotel to SwRI at 8:00 am. </p>
+    <p align="justify">At the 3:00 pm close of the conference, buses will take participants to San Antonio International Airport and will return to hotel for participants who traveled by car. <br />
+    </p>
+  <!-- end #mainContent --></div>
+	<!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+	<div id="footer">
+	  <p align="center" class="smalltext style7">Conferences are supported in part by the National Science Foundation (PHY-1346627) and by the Department of Energy Office of Science (DE-SC0011076).</p>
+	  <p align="center" class="smalltext"><span class="style6"><img src="/Webpage Files/Images/apsdoensflogo.png" alt="CUWIP Sponsors" width="391" height="81" /></span></p>
+	  <p align="center" class="smalltext">&nbsp;</p>
+  <!-- end #footer --></div>
+<!-- end #container --></div>
+
+<script type="text/javascript">
+<!--
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"../SpryAssets/SpryMenuBarDownHover.gif", imgRight:"../SpryAssets/SpryMenuBarRightHover.gif"});
+//-->
+</script>
+</body>
+</html>
