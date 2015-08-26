@@ -42,16 +42,21 @@ a{outline:none; text-decoration:none;}
 
 .fl_left, .imgl{float:left;}
 .fl_right, .imgr{float:right;}
+/*.ar_cent, .imgc{float:inherit;}*/
 
 img{width:auto; max-width:100%; height:auto; margin:0; padding:0; border:none; line-height:normal; vertical-align:middle;}
 .imgl{margin:0 15px 10px 0; clear:left;}
 .imgr{margin:0 0 10px 15px; clear:right;}
+.img_small{width:auto; max-width:55%; max-height:auto; padding:2; border:none; line-height:normal; vertical-align:middle;}
+/*.img_small2{width:auto; max-width:auto; max-height:67%; padding:2; border:none; line-height:normal; vertical-align:middle;} */
+.img_logo{width:auto; max-width:75%; max-height:auto; padding:0; border:none; line-height:normal; vertical-align:bottom;}
 
 
 /* Fonts
 --------------------------------------------------------------------------------------------------------------- */
 body, input, textarea, select{font-family:Verdana, Geneva, sans-serif;}
 h1, h2, h3, h4, h5, h6, .heading{font-family:Georgia, "Times New Roman", Times, serif;}
+.ssf{font-family:Verdana, Geneva, sans-serif;}
 
 
 /* Forms

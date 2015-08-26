@@ -210,6 +210,9 @@ label span{color:#FF0000; background-color:inherit;}
 
 .passive{color:#888888;}
 .passive:hover{color:#F58223;}
+.passive.fb:hover{color:#527DBF;}
+.passive.tw:hover{color:#82C2EB;}
+.passive.insta:hover{color:#AF875A;}
 .overlay.dark{color:#FFFFFF;}
 .overlay.dark::after{background-color:rgba(0,0,0,.65);}
 .overlay.light{color:#232323;}
