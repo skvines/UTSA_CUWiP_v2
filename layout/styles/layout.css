@@ -204,16 +204,19 @@ td{border-width:0 1px;}
 
 /* Colours
 --------------------------------------------------------------------------------------------------------------- */
-body{color:#888888; background-color:#F4F4F4;}
+body{color:#545454; background-color:#F4F4F4;} /* original body color: 888888 */
 a{color:#F58223;} /* F58223 (new), CC9F4D (ori)*/
 hr, .borderedbox{border-color:#D7D7D7;}
 label span{color:#FF0000; background-color:inherit;}
 
-.passive{color:#888888;}
+.light{color:#888888;}
+.orange{color:#F58223;}
+.passive{color:#545454;}
+.passivel{color:#888888;}
 .passive:hover{color:#F58223;}
-.passive.fb:hover{color:#527DBF;}
-.passive.tw:hover{color:#82C2EB;}
-.passive.insta:hover{color:#AF875A;}
+.passivel.fb:hover{color:#527DBF;}
+.passivel.tw:hover{color:#82C2EB;}
+.passivel.insta:hover{color:#AF875A;}
 .overlay.dark{color:#FFFFFF;}
 .overlay.dark::after{background-color:rgba(0,0,0,.65);}
 .overlay.light{color:#232323;}
@@ -227,9 +230,9 @@ label span{color:#FF0000; background-color:inherit;}
 .row0, .row0 a{}
 .row1, .row1 a{}
 .row2, .row2 a{}
-.row3{color:#888888; background-color:#FFFFFF;}
-.row4{color:#888888; background-color:#F4F4F4;}
-.row5, .row5 a{color:#888888; background-color:#F4F4F4;}
+.row3{color:#545454; background-color:#FFFFFF;}
+.row4{color:#545454; background-color:#F4F4F4;}
+.row5, .row5 a{color:#545454; background-color:#F4F4F4;}
 
 
 /* Header */
@@ -241,7 +244,7 @@ label span{color:#FF0000; background-color:inherit;}
 
 
 /* Content Area */
-.testimonials article{color:#888888; background-color:rgba(255,255,255,.5);}
+.testimonials article{color:#545454; background-color:rgba(255,255,255,.5);}
 .testimonials article:hover{background-color:rgba(255,255,255,1);}
 .testimonials article blockquote::after{color:#F4F4F4;}
 
@@ -271,7 +274,7 @@ label span{color:#FF0000; background-color:inherit;}
 #mainav li li:hover > a, #mainav .active .active > a{color:#FFFFFF; background-color:#F58223;}
 #mainav form select{color:#232323; background-color:#FFFFFF; border-color:#D7D7D7;}
 
-#breadcrumb a{color:#888888; background-color:inherit;}
+#breadcrumb a{color:#545454; background-color:inherit;}
 #breadcrumb li:last-child a{color:#F58223;}
 
 .container .sidebar nav a{color:inherit; border-color:#D7D7D7;}
@@ -285,9 +288,9 @@ label span{color:#FF0000; background-color:inherit;}
 
 /* Tables + Comments */
 table, th, td, #comments .avatar, #comments input, #comments textarea{border-color:#D7D7D7;}
-th{color:#FFFFFF; background-color:#373737;}
+th{color:#FFFFFF; background-color:#545454;} /*original background: 373737*/
 tr, #comments li, #comments input[type="submit"], #comments input[type="reset"]{color:inherit; background-color:#FBFBFB;}
-tr:nth-child(even), #comments li:nth-child(even){color:inherit; background-color:#F7F7F7;}
+tr:nth-child(even), #comments li:nth-child(even){color:inherit; background-color:#EDEDED;} /*original background: F77F7F7*/
 table a, #comments a{background-color:inherit;}
 
 
