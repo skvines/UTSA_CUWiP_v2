@@ -242,6 +242,7 @@ label span{color:#FF0000; background-color:inherit;}
 .passive{color:#545454;}
 .passivel{color:#888888;}
 .passive:hover{color:#F58223;}
+.passivel.ori:hover{color:#F58223;}
 .passivel.fb:hover{color:#527DBF;}
 .passivel.tw:hover{color:#82C2EB;}
 .passivel.insta:hover{color:#AF875A;}
