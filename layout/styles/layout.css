@@ -108,7 +108,7 @@ File: Layout CSS
 
 /* Transition Fade
 --------------------------------------------------------------------------------------------------------------- */
-.faico a, #mainav *, #backtotop, .btn, input:focus, .testimonials article, figure::after{transition:all .3s ease-in-out;}
+.faico a, #mainav *,#mainavhome *, #backtotop, .btn, input:focus, .testimonials article, figure::after{transition:all .3s ease-in-out;}
 
 
 /* ------------------------------------------------------------------------------------------------------------ */
@@ -122,12 +122,12 @@ File: Layout CSS
 --------------------------------------------------------------------------------------------------------------- */
 nav ul, nav ol{margin:0; padding:0; list-style:none;}
 
-#mainav, #breadcrumb, .sidebar nav{line-height:normal;}
-#mainav .drop::after, #mainav li li .drop::after, #breadcrumb li a::after, .sidebar nav a::after{position:absolute; font-family:"FontAwesome"; font-size:10px; line-height:10px;}
+#mainav,#mainavhome, #breadcrumb, .sidebar nav{line-height:normal;}
+#mainav .drop::after, #mainav li li .drop::after,#mainavhome .drop::after, #mainavhome li li .drop::after, #breadcrumb li a::after, .sidebar nav a::after{position:absolute; font-family:"FontAwesome"; font-size:10px; line-height:10px;}
 
 /* Top Navigation */
-#mainav{}
-#mainav ul{text-transform:uppercase;}
+#mainav{background-color:rgba(215, 215, 215, 0.4);}
+#mainav ul{text-transform:uppercase}
 #mainav ul ul{z-index:9999; position:absolute; width:180px; text-transform:none;}
 #mainav ul ul ul{left:180px; top:0;}
 #mainav li{display:inline-block; position:relative; margin:0 20px 0 0; padding:0;}
@@ -147,6 +147,31 @@ nav ul, nav ol{margin:0; padding:0; list-style:none;}
 #mainav form select, #mainav form select option{display:block; cursor:pointer; outline:none;}
 #mainav form select{width:100%; padding:5px; border:1px solid;}
 #mainav form select option{margin:5px; padding:0; border:none;}
+
+
+/* Top Navigation Home */
+#mainavhome{background-color:rgba(215, 215, 215, 0.6);}
+#mainavhome ul{text-transform:uppercase;opacity:2;}
+#mainavhome ul ul{z-index:9999; position:absolute; width:180px; text-transform:none;}
+#mainavhome ul ul ul{left:180px; top:0;}
+#mainavhome li{display:inline-block; position:relative; margin:0 20px 0 0; padding:0;}
+#mainavhome li:last-child{margin-right:0;}
+#mainavhome li li{width:100%; margin:0;}
+#mainavhome li a{display:block; padding:20px 0;}
+#mainavhome li li a{border:solid; border-width:0 0 1px 0;}
+#mainavhome .drop{padding-left:15px;}
+#mainavhome li li a, #mainavhome li li .drop{display:block; margin:0; padding:10px 15px;}
+#mainavhome .drop::after, #mainavhome li li .drop::after{content:"\f0d7";}
+#mainavhome .drop::after{top:25px; left:5px;}
+#mainavhome li li .drop::after{top:15px; left:5px;}
+#mainavhome ul ul{visibility:hidden; opacity:0;}
+#mainavhome ul li:hover > ul{visibility:visible; opacity:1;}
+
+#mainavhome form{display:none; margin:0; padding:0;}
+#mainavhome form select, #mainavhome form select option{display:block; cursor:pointer; outline:none;}
+#mainavhome form select{width:100%; padding:5px; border:1px solid;}
+#mainavhome form select option{margin:5px; padding:0; border:none;}
+
 
 /* Breadcrumb */
 #breadcrumb{padding:20px 0;}
@@ -276,6 +301,12 @@ label span{color:#FF0000; background-color:inherit;}
 #mainav li li a, #mainav .active li a{color:#FFFFFF; background-color:rgba(0,0,0,.6); border-color:rgba(0,0,0,.6);}
 #mainav li li:hover > a, #mainav .active .active > a{color:#FFFFFF; background-color:#F58223;}
 #mainav form select{color:#232323; background-color:#FFFFFF; border-color:#D7D7D7;}
+
+#mainavhome li a{color:inherit;}
+#mainavhome .active a, #mainavhome a:hover, #mainavhome li:hover > a{color:#F58223; background-color:inherit;}
+#mainavhome li li a, #mainavhome .active li a{color:#FFFFFF; background-color:rgba(0,0,0,.6); border-color:rgba(0,0,0,.6);}
+#mainavhome li li:hover > a, #mainavhome .active .active > a{color:#FFFFFF; background-color:#F58223;}
+#mainavhome form select{color:#232323; background-color:#FFFFFF; border-color:#D7D7D7;}
 
 #breadcrumb a{color:#545454; background-color:inherit;}
 #breadcrumb li:last-child a{color:#F58223;}
