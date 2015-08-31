@@ -31,9 +31,9 @@ File: Layout CSS
 
 /* Page Intro
 --------------------------------------------------------------------------------------------------------------- */
-#pageintro{padding:80px 0; text-align:center;}
+#pageintro{padding:20px 0; text-align:center;}
 
-#pageintro *{margin:0 0 50px 0; white-space:normal; line-height:1;}
+#pageintro *{margin:0 0 30px 0; white-space:normal; line-height:1;}
 #pageintro i{font-size:120px;}
 /*#pageintro figure{align:center;}*/
 #pageintro .heading{font-size:60px; font-weight:normal; letter-spacing:10px;}
